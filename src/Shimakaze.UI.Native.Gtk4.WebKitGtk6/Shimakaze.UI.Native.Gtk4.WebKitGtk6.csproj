@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="GirCore.WebKit-6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shimakaze.UI.Native.Gtk4\Shimakaze.UI.Native.Gtk4.csproj" />
+    <ProjectReference Include="..\Shimakaze.UI.Native.WebView\Shimakaze.UI.Native.WebView.csproj" />
+  </ItemGroup>
+
+</Project>

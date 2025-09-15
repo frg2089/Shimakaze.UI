@@ -8,7 +8,7 @@ public sealed class Gtk4Application : Application
 
     public static new Gtk4Application Instance => (Gtk4Application)Application.Instance;
 
-    public Gtk4Application(Gtk4Dispatcher dispatcher) : base(dispatcher)
+    public Gtk4Application(Dispatcher dispatcher) : base(dispatcher)
     {
         Gtk.Module.Initialize();
         NativeApp = Gtk.Application.New(null, Gio.ApplicationFlags.DefaultFlags);

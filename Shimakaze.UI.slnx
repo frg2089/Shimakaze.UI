@@ -8,8 +8,11 @@
     <File Path="LICENSE" />
     <File Path="nuget.config" />
   </Folder>
+  <Project Path="src/Shimakaze.UI.Native.Gtk4.WebKitGtk6/Shimakaze.UI.Native.Gtk4.WebKitGtk6.csproj" />
   <Project Path="src/Shimakaze.UI.Native.Gtk4/Shimakaze.UI.Native.Gtk4.csproj" />
   <Project Path="src/Shimakaze.UI.Native.TestHost/Shimakaze.UI.Native.TestHost.csproj" />
+  <Project Path="src/Shimakaze.UI.Native.WebView/Shimakaze.UI.Native.WebView.csproj" />
+  <Project Path="src/Shimakaze.UI.Native.Win32.WebView2/Shimakaze.UI.Native.Win32.WebView2.csproj" />
   <Project Path="src/Shimakaze.UI.Native.Win32/Shimakaze.UI.Native.Win32.csproj" />
   <Project Path="src/Shimakaze.UI.Native/Shimakaze.UI.Native.csproj" />
 </Solution>

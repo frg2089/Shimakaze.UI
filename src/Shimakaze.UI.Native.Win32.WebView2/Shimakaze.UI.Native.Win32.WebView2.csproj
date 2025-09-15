@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" GeneratePathProperty="true">
+      <ExcludeAssets>build;buildMultitargeting;buildTransitive</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shimakaze.UI.Native.WebView\Shimakaze.UI.Native.WebView.csproj" />
+    <ProjectReference Include="..\Shimakaze.UI.Native.Win32\Shimakaze.UI.Native.Win32.csproj" />
+  </ItemGroup>
+  
+  <Import Project="$(MSBuildThisFileDirectory)\WebView2.props" />
+
+</Project>

@@ -6,7 +6,7 @@ using Windows.Win32;
 
 namespace Shimakaze.UI.Native.Win32;
 
-public sealed class Win32Application(Win32Dispatcher dispatcher) : Application(dispatcher)
+public sealed class Win32Application(Dispatcher dispatcher) : Application(dispatcher)
 {
     private bool _disposedValue;
 

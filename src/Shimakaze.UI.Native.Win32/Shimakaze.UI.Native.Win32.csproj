@@ -11,4 +11,8 @@
     <ProjectReference Include="..\Shimakaze.UI.Native\Shimakaze.UI.Native.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="Shimakaze.UI.Native.Win32.WebView2"/>
+  </ItemGroup>
+
 </Project>
