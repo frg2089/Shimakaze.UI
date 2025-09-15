@@ -10,9 +10,6 @@ public interface IDispatcherTask
     CancellationToken CancellationToken { get; }
     internal void Invoke();
     IDispatcherTaskAwaiter GetAwaiter();
-
-    [EditorBrowsable(EditorBrowsableState.Never)]
-    static void Invoke(IDispatcherTask task) => task.Invoke();
 }
 
 public interface IDispatcherTask<out TResult> : IDispatcherTask

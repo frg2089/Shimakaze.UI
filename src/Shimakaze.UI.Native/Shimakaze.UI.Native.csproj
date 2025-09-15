@@ -3,6 +3,11 @@
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <InternalsVisibleTo Include="Shimakaze.UI.Native.Gtk4"/>
+    <InternalsVisibleTo Include="Shimakaze.UI.Native.Win32"/>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Resources\Resource.Designer.cs">

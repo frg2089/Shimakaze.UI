@@ -17,7 +17,7 @@ public sealed class Gtk4Dispatcher : Dispatcher
             },
             () =>
             {
-                IDispatcherTask.Invoke(task);
+                task.Invoke();
                 return false;
             });
     }

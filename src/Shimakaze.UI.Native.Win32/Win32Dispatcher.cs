@@ -56,7 +56,7 @@ public sealed class Win32Dispatcher : Dispatcher
                     || TryDequeue(DispatcherPriority.Idle, out task))
                 {
                     // 没有消息时尝试调用闲置任务
-                    IDispatcherTask.Invoke(task);
+                    task.Invoke();
                 }
                 else
                 {
@@ -76,7 +76,7 @@ public sealed class Win32Dispatcher : Dispatcher
                     || TryDequeue(DispatcherPriority.Low, out task)
                     || TryDequeue(DispatcherPriority.Idle, out task))
                     // 没有消息时尝试调用闲置任务
-                    IDispatcherTask.Invoke(task);
+                    task.Invoke();
 
                 break;
             }
@@ -84,19 +84,19 @@ public sealed class Win32Dispatcher : Dispatcher
             {
                 if (TryDequeue(DispatcherPriority.High, out var task))
                     // 没有消息时尝试调用闲置任务
-                    IDispatcherTask.Invoke(task);
+                    task.Invoke();
             }
             else
             {
                 if ((_loopCount & 0b1000) is not 0)
                 {
                     if (TryDequeue(DispatcherPriority.Normal, out var task))
-                        IDispatcherTask.Invoke(task);
+                        task.Invoke();
                 }
                 else if ((_loopCount & 0b10000) is not 0)
                 {
                     if (TryDequeue(DispatcherPriority.Low, out var task))
-                        IDispatcherTask.Invoke(task);
+                        task.Invoke();
                 }
             }
 
