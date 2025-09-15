@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="GirCore.Gtk-4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shimakaze.UI.Native\Shimakaze.UI.Native.csproj" />
+  </ItemGroup>
+
+</Project>

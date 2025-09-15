@@ -5,4 +5,9 @@
   </PropertyGroup>
   <ItemGroup>
   </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageVersion Include="GirCore.Gtk-4.0" Version="0.6.3" />
+    <PackageVersion Include="Microsoft.Windows.CsWin32" Version="0.3.205" />
+  </ItemGroup>
 </Project>
