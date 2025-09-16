@@ -1,0 +1,8 @@
+﻿{
+  "profiles": {
+    "Shimakaze.UI.Native.Cocoa.SourceGenerator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\..\\src\\Shimakaze.UI.Native.Cocoa\\Shimakaze.UI.Native.Cocoa.csproj"
+    }
+  }
+}

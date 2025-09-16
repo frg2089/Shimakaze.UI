@@ -1,13 +1,18 @@
 <Solution>
+  <Folder Name="/Analyzer/">
+    <Project Path="analyzer/Shimakaze.UI.Native.Cocoa.SourceGenerator/Shimakaze.UI.Native.Cocoa.SourceGenerator.csproj" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
     <File Path=".gitignore" />
     <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
     <File Path="Directory.Packages.props" />
     <File Path="global.json" />
     <File Path="LICENSE" />
     <File Path="nuget.config" />
   </Folder>
+  <Project Path="src/Shimakaze.UI.Native.Cocoa/Shimakaze.UI.Native.Cocoa.csproj" />
   <Project Path="src/Shimakaze.UI.Native.Gtk4.WebKitGtk6/Shimakaze.UI.Native.Gtk4.WebKitGtk6.csproj" />
   <Project Path="src/Shimakaze.UI.Native.Gtk4/Shimakaze.UI.Native.Gtk4.csproj" />
   <Project Path="src/Shimakaze.UI.Native.TestHost/Shimakaze.UI.Native.TestHost.csproj" />
